@@ -7,10 +7,28 @@ import org.shoes.model.abs.Product;
 public class Shoe implements Product{
 
 	
+	public float getCustomerPrice() {
+		return customerPrice;
+	}
+
+	public void setCustomerPrice(float customerPrice) {
+		this.customerPrice = customerPrice;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+
 	private int size;
 	private String brand;
 	private List<String> color;
 	private int stock;
+	private float price;
+	private float customerPrice;
 	
 	
 	public Shoe(int size, String brand, List<String> color) {
